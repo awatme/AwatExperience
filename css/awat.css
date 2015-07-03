@@ -37,9 +37,9 @@
 
 body {
     padding-top: 60px;
-	background: #424242;
-	color: #fafafa;
-	font-family: 'irani', sans-serif;
+    background-color: #F5F8FA;
+    color: #0c0c0c;
+    font-family: irani, sans-serif;
 	overflow: hidden;
 }
 
@@ -81,18 +81,7 @@ body {
   transition-timing-function: linear;
 }
 
-.announce {
-  font-size: 30;
-  text-align: center;
-
-}
-
-.twitter-blue {
-  background-color: #F5F8FA;
-}
-
 .container {
-
 	text-align: center;
 }
 
@@ -103,37 +92,31 @@ body {
   display: inline-block;
 }
 
-.trending {
-
+.left-column {
 	background-color: #fff;
 	border-radius: 5px;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-	height: 200px;
+    min-height: 200px;
 	padding: 15px;
 	padding-left: 20px;
 	padding-right: 20px;
 	text-align: left;
 }
 
-.trending h1 {
+.left-column h1 {
 	margin-top: 3px;
 	font-size: 18px;
 	color: #66757f;
 	font-weight: 300;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.trending a{
+.left-column a {
 	color: #595C54;
-	font-family: irani, Roboto, 'Open Sans', Helvetica,Arial,sans-serif;
 	font-size: 13px;
 }
 
 .main {
 	margin-top: 50px;
-}
-
-.feed {
-
 }
 
 .feed .top {
@@ -198,10 +181,9 @@ body {
 .feed .tweet .name strong {
 	color: #292f33;
 	font-size: 14px;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-.feed .tweet .name span {
+.feed .tweet .name {
 	color: #8899a6;
 	font-size: 13px;
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -215,6 +197,7 @@ body {
 	text-align: right;
 	direction: rtl;
 	padding: 4px;
+    font-family: irani, sans-serif;
 
 }
 
@@ -222,11 +205,12 @@ body {
 	text-align: left;
 }
 
-.feed .tweet .options>div {
+.feed .tweet .options:after {
+    content: "";
 	background: url('../img/fave.png');
 	height: 25px;
 	width: 193px;
-	border: 0px;
+    border: 0;
 
 }
 
@@ -246,9 +230,10 @@ body {
 
 ol.trends {
     list-style: none;
+    padding: 0;
 }
 
-.trending:hover a {
+.left-column:hover a {
     color: #12bed2;
 }
 
