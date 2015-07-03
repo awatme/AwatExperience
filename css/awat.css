@@ -1,0 +1,266 @@
+@font-face {
+    font-family: 'irani';
+    src: url('../fonts/IRANSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+@font-face {
+    font-family: 'irani';
+    src: url('../fonts/IRANSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+ 
+@font-face {
+    font-family: 'irani';
+    src: url('../fonts/IRANSansLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+#nav-container {
+	width: 100%;
+    background-color: #ffffff;
+}
+
+#nav-container div {
+	font-family: Roboto, 'Open Sans', serif;
+	font-size: 24px;
+	line-height: 48px;
+    color: #00457b;
+}
+
+.navbar {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+body {
+    padding-top: 60px;
+	background: #424242;
+	color: #fafafa;
+	font-family: 'irani', sans-serif;
+	overflow: hidden;
+}
+
+.picframe {
+	margin-top: -10%;
+	width: 100%;
+	margin-right: auto;
+	position: relative;
+	display: block;
+	opacity: 0.0;
+	text-align: center;
+	vertical-align: middle;
+	transition-property: transform, opacity;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+}
+
+.picframe div {
+	margin-top: 25px;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+.picframe div img {
+	width: 50px;
+	height: 50px;
+}
+
+.picframe-in {
+	opacity: 1.0;
+}
+
+.box {
+  background: #2db34a;
+  transition-property: background;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.announce {
+  font-size: 30;
+  text-align: center;
+
+}
+
+.twitter-blue {
+  background-color: #F5F8FA;
+}
+
+.container {
+
+	text-align: center;
+}
+
+.container .main {
+  width: 100%;
+  max-width: 1190px;
+  height: 200px;
+  display: inline-block;
+}
+
+.trending {
+
+	background-color: #fff;
+	border-radius: 5px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	height: 200px;
+	padding: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: left;
+}
+
+.trending h1 {
+	margin-top: 3px;
+	font-size: 18px;
+	color: #66757f;
+	font-weight: 300;
+}
+
+.trending a{
+	color: #595C54;
+	font-family: irani, Roboto, 'Open Sans', Helvetica,Arial,sans-serif;
+	font-size: 13px;
+}
+
+.main {
+	margin-top: 50px;
+}
+
+.feed {
+
+}
+
+.feed .top {
+	border-radius: 3px 3px 0 0;
+	border-color: #D5D6D4;
+	background-color: #EEEEED;
+	height: 57px;
+	padding: 12px;
+}
+
+.feed .top .pic {
+	position: absolute;
+	left: 28px;
+	top: 13px;
+	width: 32px;
+	height: 32px;
+	border-radius: 4px;
+}
+
+.feed .top .boxc {
+	margin-left: 48px;
+
+}
+
+.feed .top .box {
+	height: 37px;
+	color: #595C54;
+	background-color: #fff;
+	font-size: 14px;
+	border: 1px solid #e1e8ed;
+	border-radius: 3px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: left;
+
+}
+
+.feed-content {
+	border-bottom: 0;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	background-color: #fff;
+	min-height: 500px;
+}
+
+.feed .tweet {
+	border-top: 1px solid #e1e8ed;
+	border-bottom: 1px solid #e1e8ed;
+}
+
+.feed .tweet>div {
+	min-height: 51px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	padding-right: 12px;
+	padding-left: 12px;
+	margin-left: 56px;
+}
+
+.feed .tweet .name strong {
+	color: #292f33;
+	font-size: 14px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.feed .tweet .name span {
+	color: #8899a6;
+	font-size: 13px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.feed .tweet .content {
+	color: #292f33;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+	text-align: right;
+	direction: rtl;
+	padding: 4px;
+
+}
+
+.feed .tweet .options {
+	text-align: left;
+}
+
+.feed .tweet .options>div {
+	background: url('../img/fave.png');
+	height: 25px;
+	width: 193px;
+	border: 0px;
+
+}
+
+.tweet:hover {
+	background-color: #EDF5F7;
+}
+
+.feed .tweet .avatar {
+	float: left;
+	margin-left: -58px;
+	margin-top:3px;
+	height:48px;
+	width:48px;
+	border-radius: 5px;
+
+}
+
+ol.trends {
+    list-style: none;
+}
+
+.trending:hover a {
+    color: #12bed2;
+}
+
+a {
+    transition: all .3s ease-out;
+}
+
+.name_label {
+    font-weight: bold;
+    color: #222;
+}
+
+.left-align {
+    text-align: left;
+}

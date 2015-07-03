@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head lang="fa">
+    <meta charset="UTF-8">
+    <title>Awat Experience</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Awat experience, designed by @mjafar_mash inspired by khorsand experience by @blacvvine">
+    <meta name="author" content="@mjafar_mash">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/awat.css">
+    <script language="javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/experience.js"></script>
+    <script type="text/javascript">
+        var tweets = [
+'من گورخرم',
+
+        ];
+        $(window).on('load', function () {
+            new Experience(
+                    'Awat (ئاوات)',
+                    'awat_17',
+                    'Not long ago',
+                    5,
+                    3000,
+                    '.tweet.prefab',
+                    '.feed-content',
+                    tweets
+            ).start();
+        });
+    </script>
+</head>
+
+<body class="twitter-blue">
+
+<div class="navbar navbar-fixed-top">
+    <div id="nav-container" class="navbar-inner container">
+        <div>The Awat Experience</div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="main row">
+        <div class="col-md-4 col-lg-4 visible-lg-block visible-md-block trending">
+            <h1>Worldwide Trends</h1>
+            <ol class="trends">
+                <li><a href="https://twitter.com/search?q=%23QodC">#QodC</a></li>
+                <li><a href="https://twitter.com/search?q=%23Awat">#Awat</a></li>
+                <li><a href="https://twitter.com/search?q=%23SalmaSadat">#SalmaSadat</a></li>
+                <li><a href="https://twitter.com/search?q=%23LoveWins">#LoveWins</a></li>
+                <li><a href="https://twitter.com/search?q=%23کمال‌گرایی">#کمال‌گرایی</a></li>
+            </ol>
+        </div>
+
+        <div class="col-md-8 col-sm-12 feed">
+            <div class="top">
+                <img class="pic" src="img/awat_pp.jpg"/>
+
+                <div class="boxc">
+                    <div class="box">
+                        <div>What's up?</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feed-content">
+                <div class="tweet hide prefab">
+                    <div>
+                        <img class="avatar" src="img/awat_pp.jpg"/>
+
+                        <div class="name">
+                            <div class="left-align">
+                                <span class="name_label">Awat (ئاوات)</span>
+                                <span class="username_label">@awat_17</span> . <span class="timestamp_label">Not long ago</span>
+                            </div>
+
+                            <div class="content">
+                                <p id="tweet">
+                                    تجربه‌ی ئاوات
+                                </p>
+                            </div>
+
+                            <div class="options">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
