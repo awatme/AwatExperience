@@ -40,7 +40,7 @@ body {
     background-color: #F5F8FA;
     color: #0c0c0c;
     font-family: irani, sans-serif;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 .picframe {
@@ -95,7 +95,6 @@ body {
 .left-column {
 	background-color: #fff;
 	border-radius: 5px;
-    min-height: 200px;
 	padding: 15px;
 	padding-left: 20px;
 	padding-right: 20px;
