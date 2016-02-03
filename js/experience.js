@@ -36,7 +36,7 @@ function Experience (name, username, timeStamp, maxNumberOfTweetsOnTimeline, tim
             $tweet.find('p#tweet').html(tweetText);
             $tweet.find('.name_label').html(name);
             $tweet.find('.timestamp_label').html(timeStamp);
-            $tweet.find('.username_label').html('@' + username);
+            $tweet.find('.username_label').html('<a href="https://twitter.com/'+username+'" target="_blank">@' + username + '</a>');
             var $container = $(tweetContainer);
             numberOfTweetsOnTimeline++;
             var show = function() {
